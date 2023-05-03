@@ -1,28 +1,8 @@
-# WEBPACK
-
-ссылка на youtube
-https://youtu.be/o8KMucDpSno
-
 Для установки пакетов используйте команду npm install
+Запуск сервера для разработки:  npm run start
 
-## Команды
+Сборка проекта без оптимизации: npm run build-dev
 
-### Запуск сервера для разработки
-```shell
-npm run start
-```
+Сборка проекта с оптимизацией: npm run build-prod
 
-### Сборка проекта без оптимизации
-```shell
-npm run build-dev
-```
-
-### Сборка проекта с оптимизацией
-```shell
-npm run build-prod
-```
-
-### Очистка папки dist
-```shell
-npm run clear
-```
+Очистка папки dist: npm run clear
