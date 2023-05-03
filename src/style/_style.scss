@@ -1,8 +1,33 @@
 body {
-  font-family: 'Montserrat';
+  min-width: 320px;
+  min-height: 100vh;;
+  font-family: Mulish, san-serif;
+  font-weight: 300;
   background-color: $back;
   color: $main;
+  line-height: 1.4;
+  font-size: 16px;
+}
 
+.link-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 20px;
+  font-weight: 1000;
+  font-size: 16px;
+  line-height: 1;
+  color: $back;
+  background-color: $second;
+  border-radius: 80px;
+
+  &::after{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/arrow-right.svg') center/contain no-repeat;
+  }
 }
 
 .header {
