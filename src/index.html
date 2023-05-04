@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <img src="img/logo.svg" alt="Оранжевый логотип PrettyPaw">
+      <img class="header__logo" src="img/logo.svg" alt="Оранжевый логотип PrettyPaw">
 
       <nav class="header__nav navigation">
         <ul class="navigation__list">
@@ -46,6 +46,9 @@
 
         <p class="hero__subtitle">С&nbsp;заботой о&nbsp;животных</p>
       </div>
+      <video class="hero__video-bg video-bg" loading="lazy" autoplay loop muted>
+
+      </video>
     </section>
 
     <section class="about">
@@ -70,12 +73,9 @@
           </ul>
         </div>
 
-        <div class="about__picture">
-          <!-- Slider main container -->
-          <div class="about__slider swiper">
-            <!-- Additional required wrapper -->
-            <ul class="about__image-list swiper-wrapper">
-              <!-- Slides -->
+        <div class="about__picture">          
+          <div class="about__slider swiper">            
+            <ul class="about__image-list swiper-wrapper">              
               <li class="about__image-item swiper-slide">
                 <picture class="about__image-wrapper">
                   <source srcset="img/leo_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -179,10 +179,8 @@
           </p>
           <a href="#career" class="career__link link-main">Подробнее</a>
         </div>        
-
-        <!-- Slider main container -->
+        
         <div class="career__slider swiper">
-          <!-- Additional required wrapper -->
           <ul class="career__image-list swiper-wrapper">
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
@@ -239,8 +237,7 @@
                 <img class="career__image" src="img/elephant.jpg" alt="слон" loading="lazy">
               </picture>
             </li>                        
-          </ul>
-          <!-- If we need pagination -->
+          </ul>          
           <div class="swiper-pagination"></div>
 
         </div>

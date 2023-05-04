@@ -1,0 +1,87 @@
+.hero {
+  position: relative;
+  background-image: url('../img/poster@1x.jpg');
+  background-image: image-set(
+    url('../img/poster@2x.webp') 2x,
+    url('../img/poster@1x.webp') 1x,
+    url('../img/poster@2x.jpg') 2x,
+    url('../img/poster@1x.jpg') 1x
+  );
+
+    background-size: cover;
+    background-position: center;
+
+    @include md {
+      background-image: url('../img/poster-tablet@1x.jpg');
+      background-image: image-set(
+        url('../img/poster-tablet@2x.webp') 2x,
+        url('../img/poster-tablet@1x.webp') 1x,
+        url('../img/poster-tablet@2x.jpg') 2x,
+        url('../img/poster-tablet@1x.jpg') 1x
+      );
+    }
+
+    @include xl {
+      background-image: url('../img/poster-desktop@1x.jpg');
+      background-image: image-set(
+        url('../img/poster-desktop@2x.webp') 2x,
+        url('../img/poster-desktop@1x.webp') 1x,
+        url('../img/poster-desktop@2x.jpg') 2x,
+        url('../img/poster-desktop@1x.jpg') 1x
+      );
+    }
+
+    @include xxl {
+      background-image: url('../img/poster-desktop@4x.jpg');
+      background-image: image-set(
+        url('../img/poster-desktop@4x.webp') 1x,        
+        url('../img/poster-desktop@4x.jpg') 1x
+      );
+    }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+    min-height: 554px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-end;
+
+    @include xl {
+      min-height: 780px;
+    }
+
+    @include xxl {
+      min-height: 100vh;
+    }
+  }
+
+  &__title {        
+    font-weight: 1000;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $back;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 1;
+    color: $second;
+    text-transform: uppercase;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    inset: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.38%, #000000 100%);    
+  }
+
+  &__video-bg {
+    z-index: 8;
+  }
+}
