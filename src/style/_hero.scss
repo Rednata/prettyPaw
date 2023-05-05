@@ -42,14 +42,19 @@
   &__container {
     position: relative;
     z-index: 10;
-    min-height: 554px;
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;    
     justify-content: flex-end;
+    min-height: 554px;
+    padding-bottom: 50px;    
+    
+    @include lg {
+      padding-bottom: 74px;
+    }
 
     @include xl {
       min-height: 780px;
+      padding-bottom: 100px;
     }
 
     @include xxl {
